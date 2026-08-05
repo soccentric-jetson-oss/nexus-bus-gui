@@ -9,7 +9,7 @@ class NexusBusApp(QMainWindow):
         w=QWidget(); self.setCentralWidget(w); l=QVBoxLayout(w); l.setContentsMargins(20,20,20,20)
         l.addWidget(QLabel("Nexus Bus — Peripheral Access"))
         f=QFrame(); f.setFrameStyle(QFrame.StyledPanel); fl=QFormLayout(f)
-        self.type_cb=QComboBox(); self.type_cb.addItems(["GPIO","I2C","SPI","UART"])
+        self.type_cb=QComboBox(); self.type_cb.addItems(["GPIO","I2C","SPI","UART","CAN"])
         self.id_sb=QSpinBox(); self.id_sb.setRange(0,7)
         self.addr_sb=QSpinBox(); self.addr_sb.setRange(0,255); self.addr_sb.setPrefix("0x")
         self.reg_sb=QSpinBox(); self.reg_sb.setRange(0,255); self.reg_sb.setPrefix("0x")
