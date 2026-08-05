@@ -8,6 +8,38 @@ The Nexus Bus GUI is a cross-platform PySide6 desktop application for reading fr
 - PySide6
 - desktop
 - application
+- Bus
+- type
+- selector
+- (GPIO,
+- I2C,
+- SPI,
+- UART)
+- Configurable
+- bus
+- ID
+- and
+- address
+- Register-level
+- read
+- operations
+- Register-level
+- write
+- operations
+- Hex
+- value
+- display
+- for
+- results
+- gRPC
+- client
+- with
+- auto-reconnect
+- Form-based
+- intuitive
+- interface
+- MIT
+- licensed
 
 ## Quick Start
 
@@ -20,16 +52,6 @@ The Nexus Bus GUI is a cross-platform PySide6 desktop application for reading fr
 make all      # Build all targets
 make test     # Run tests
 make clean    # Clean build artifacts
-```
-
-## Architecture
-
-```
-Driver (kernel module) ──► Server (gRPC) ──► GUI (PySide6)
-     │                        │                    │
-     ▼                        ▼                    ▼
-  Hardware              C++ Service           Desktop App
-  Access                Layer                 (macOS/Linux/Win)
 ```
 
 ## Repository Structure
@@ -47,10 +69,10 @@ Driver (kernel module) ──► Server (gRPC) ──► GUI (PySide6)
 ## Project Status
 
 **Version:** 0.1.0 — Initial release
-**License:** Bus type selector (GPIO, I2C, SPI, UART)
+**License:** MIT
 **Audit Score:** 90/100
 
-## 🌐 Ecosystem
+## Ecosystem
 
 This project is part of the [Jetson AGX Orin Capability Showcase](https://github.com/soccentric-jetson-oss/soccentric-jetson-oss) — five open-source projects demonstrating full exploitation of NVIDIA's flagship edge AI platform.
 
@@ -60,4 +82,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. All contributions welcome
 
 ## License
 
-Bus type selector (GPIO, I2C, SPI, UART). See [LICENSE](LICENSE) for details.
+MIT. See [LICENSE](LICENSE) for details.
