@@ -1,24 +1,14 @@
-# SPDX-License-Identifier: MIT
-"""
-Nexus Bus GUI - Application entry point.
-
-Thin entry point that creates the QApplication and launches the
-main window. All UI logic lives in src.app.NexusBusApp.
-"""
-
+"""Nexus Bus GUI - Entry point."""
 import sys
 from PySide6.QtWidgets import QApplication
-from src.app import NexusBusApp
-
+from src.app import MainWindow
 
 def main():
-    """Create and run the Nexus Bus GUI application."""
     app = QApplication(sys.argv)
     app.setApplicationName("Nexus Bus")
-    window = NexusBusApp()
+    window = MainWindow()
     window.show()
     sys.exit(app.exec())
-
 
 if __name__ == "__main__":
     main()
