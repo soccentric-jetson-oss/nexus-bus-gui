@@ -65,7 +65,7 @@ class NexusBusApp(QMainWindow):
 
         # Result display
         self.result_label = QLabel("Result: --")
-        self.result_label.setStyleSheet("color:#888; font-size:14px;")
+        self.result_label.setStyleSheet("color:#616161; font-size:14px;")
         layout.addWidget(self.result_label)
         layout.addStretch()
 
